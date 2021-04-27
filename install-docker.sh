@@ -11,7 +11,7 @@ sudo apt-get install \
     ca-certificates \
     curl \
     gnupg \
-    lsb-release
+    lsb-release -y
 
 echo "add Docker’s official GPG key"
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
@@ -23,7 +23,7 @@ echo \
 
 echo "update the apt package index, and install the latest version of Docker Engine"
 sudo apt-get update
-sudo apt-get install docker-ce docker-ce-cli containerd.io
+sudo apt-get install docker-ce docker-ce-cli containerd.io -y
 
 echo "create the docker group and add your user"
 sudo groupadd -f docker

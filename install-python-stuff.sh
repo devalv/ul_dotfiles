@@ -8,7 +8,7 @@ echo "set python3 as default if not installed"
 echo "installing pyenv additionals"
 sudo apt-get install -y build-essential libssl-dev zlib1g-dev libbz2-dev \
 libreadline-dev libsqlite3-dev llvm libncurses5-dev libncursesw5-dev \
-xz-utils tk-dev libffi-dev liblzma-dev python-openssl
+xz-utils tk-dev libffi-dev liblzma-dev python-openssl -y
 
 echo "removing existing pyenv installation"
 rm -rf /home/$USER/.pyenv
