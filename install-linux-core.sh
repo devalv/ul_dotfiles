@@ -1,9 +1,9 @@
 #!/bin/bash
 
 set -e
-[ -z "$(which snapd)" ] && apt-get install snapd -y
-[ -z "$(which fish)" ] && apt-get install fish -y
-[ -z "$(which terminator)" ] && apt-get install terminator -y
 
+[ -z "$(dpkg -s snapd)" ] && apt install snapd -y
+[ -z "$(dpkg -s fish)" ] && apt install fish -y
+[ -z "$(dpkg -s terminator)" ] && apt install terminator -y
 
 exit 0

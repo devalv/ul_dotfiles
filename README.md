@@ -35,7 +35,8 @@ The default console editor is **vim**, and the default IDE is
 * [pretty-errors](https://github.com/onelivesleft/PrettyErrors/)
 * [cookiecutter](https://github.com/cookiecutter/cookiecutter) 
 
-### Console utils
+### Other utils
+- curl
 - mc
 - htop
 - git
@@ -55,14 +56,16 @@ The default console editor is **vim**, and the default IDE is
 - p7zip-full
 - rar
 - unrar 
+- wget
+- scrot
+- simplescreenrecorder
 
+### Graphical utils
+- dbeaver-community (snap)
+- pycharm (snap)
+- insomnia (snap)
 
-### Graphical utils (snap)
-- dbeaver-community
-- pycharm
-- insomnia
-
-### Misc apps (snap)
-- telegram
+### Misc apps
+- telegram (snap)
 - google-chrome
 - openvpn

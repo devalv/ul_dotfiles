@@ -7,33 +7,41 @@
 
 - create:
     - ~/.config
+    - ~/.config/fish
+    - ~/.config/terminator
 
 - link:
     ~/.config/fish/config.fish: fish/config.fish
-    ~/.config/fish/devalv: fish/devalv
+    ~/.config/fish/$USER: fish/devalv
     ~/.config/omf: fish/omf
     ~/.vimrc: vimrc
     ~/.gitconfig: gitconfig
     ~/.editorconfig: editorconfig
     ~/.flake8: flake8
     ~/.cookiecutterrc: cookiecutterrc
-    ~/.config/terminator/config: terminator/config
-    # TODO: firacodey
+    ~/.config/terminator/config:
+      force: true
+      path: terminator/config
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
-  - [./install-linux-core.sh, Installing Fish, Terminator and essential core utils]
-  - [./install-omf.sh, Installing Fish plugin manager and set fish as a default shell]
-  - [./install-linux-stuff.sh, Installing additional linux console utils]
-  - [./install-docker.sh, Install docker and docker-compose]
-
-  # - [git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim, Installing vim plugin manager]
-  # - [pyenv install 3.9.3 -s, Install Python 3.9.3]
-  # - [pyenv global 3.9.3, Set Python 3.9.3 as global interpeter]
-  # - [python -m pip install pretty_errors, Install pretty errors for new global Python]
-  # - [python -m pretty_errors, Set pretty errors for new global Python]
-  # - [python -m pip install -U cookiecutter, Install сookiecutter for new global Python]
-  # - command: vim -c "PluginInstall"
-  #   stdin: true
-  #   stdout: true
-  #   description: Vim plugins installation
+  - [sudo ./install-linux-core.sh, Installing Fish, Terminator and essential core utils]
+  - [sudo ./install-linux-stuff.sh, Installing additional linux utils]
+  - command: sudo ./install-omf.sh
+    stdin: true
+    stdout: true
+    description: Installing Fish plugin manager and set fish as a default shell
+  - command: sudo ./install-docker.sh
+    stdin: true
+    stdout: true
+    description: Installing docker and docker-compose
+  - command: ./install-vim-plugins.sh
+    stdin: true
+    stdout: true
+    description: Vim plugins installation
+  - command: ./install-python-stuff.sh
+    stdin: true
+    stdout: true
+    description: Installing Python stuff
+  - [./install-chrome.sh, Installing Google Chrome]
+  - [sudo ./install-snap-utils.sh, Installing graphical utils via Snap]
