@@ -1,0 +1,8 @@
+# editors configurations
+.idea/
+.vscode/
+
+# Fish
+fish/fishd*
+fisherman/await
+fish/fishfile
