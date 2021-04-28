@@ -25,23 +25,23 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
-  - [sudo ./install-linux-core.sh, Installing Fish, Terminator and essential core utils]
-  - [sudo ./install-linux-stuff.sh, Installing additional linux utils]
-  - command: sudo ./install-omf.sh
+  #- [sudo ./install-linux-core.sh, Installing Fish, Terminator and essential core utils]
+  #- [sudo ./install-linux-stuff.sh, Installing additional linux utils]
+  - command: ./install-omf.sh
     stdin: true
     stdout: true
     description: Installing Fish plugin manager and set fish as a default shell
-  - command: sudo ./install-docker.sh
-    stdin: true
-    stdout: true
-    description: Installing docker and docker-compose
-  - command: ./install-python-stuff.sh
-    stdin: true
-    stdout: true
-    description: Installing Python stuff
-  - [./install-chrome.sh, Installing Google Chrome]
-  - [sudo ./install-snap-utils.sh, Installing graphical utils via Snap]
-  - command: ./install-vim-plugins.sh
-    stdin: true
-    stdout: true
-    description: Vim plugins installation
+    #  - command: sudo ./install-docker.sh
+    #    stdin: true
+    #    stdout: true
+    #    description: Installing docker and docker-compose
+    #  - command: ./install-python-stuff.sh
+    #    stdin: true
+    #    stdout: true
+    #    description: Installing Python stuff
+    #  - [./install-chrome.sh, Installing Google Chrome]
+    #  - [sudo ./install-snap-utils.sh, Installing graphical utils via Snap]
+    #  - command: ./install-vim-plugins.sh
+    #    stdin: true
+    #    stdout: true
+    #    description: Vim plugins installation

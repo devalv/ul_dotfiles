@@ -2,20 +2,14 @@
 
 set -e
 
-echo "delete existing omf configurations"
-rm -rf ~/.local/share/omf/
+echo "installing omf"
+curl -L https://get.oh-my.fish | fish
 
-echo "download omf"
-curl -L https://get.oh-my.fish > /tmp/omf_install
-
-echo "install omf"
-chmod +x /tmp/omf_install
-fish -c "/tmp/omf_install --noninteractive"
-rm /tmp/omf_install
+echo "update omf plugins"
 fish -c omf update
 
 echo "set fish as default shell"
-echo /usr/local/bin/fish | sudo tee -a /etc/shells
-chsh -s /usr/local/bin/fish
+echo /usr/bin/fish | sudo tee -a /etc/shells
+chsh -s /usr/bin/fish
 
 exit 0

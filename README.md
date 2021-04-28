@@ -64,6 +64,7 @@ The default console editor is **vim**, and the default IDE is
 - dbeaver-community (snap)
 - pycharm (snap)
 - insomnia (snap)
+- vscode (snap)
 
 ### Misc apps
 - telegram (snap)

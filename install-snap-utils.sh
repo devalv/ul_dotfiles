@@ -6,5 +6,6 @@ set -e
 [ -z "$(which pycharm-professional)" ] && snap install pycharm-professional --classic
 [ -z "$(which insomnia)" ] && snap install insomnia
 [ -z "$(which telegram-desktop)" ] && snap install telegram-desktop
+[ -z "$(which vscode)" ] && snap install vscode
 
 exit 0
