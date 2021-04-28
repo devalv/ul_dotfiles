@@ -27,10 +27,11 @@
   - [git submodule update --init --recursive, Installing submodules]
   - [sudo ./install-linux-core.sh, Installing Fish, Terminator and essential core utils]
   - [sudo ./install-linux-stuff.sh, Installing additional linux utils]
+  - [sudo fish -c 'chsh -s (which fish)', Set fish as a default shell]
   - command: ./install-omf.sh
     stdin: true
     stdout: true
-    description: Installing Fish plugin manager and set fish as a default shell
+    description: Installing Fish plugin manager
   - command: sudo ./install-docker.sh
     stdin: true
     stdout: true
