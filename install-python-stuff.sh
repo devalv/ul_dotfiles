@@ -23,7 +23,7 @@ echo "Set Python 3.9.3 as global interpeter"
 /home/$USER/.pyenv/bin/pyenv global 3.9.3
 
 echo "installing pipenv"
-[ -z "$(dpkg -s pipenv)" ] && apt install pipenv -y
+[ -z "$(which pipenv)" ] && sudo apt install pipenv -y
 
 echo "Install pretty errors for new global Python"
 python -m pip install pretty_errors
