@@ -25,7 +25,7 @@ test -r ~/.fish.env; and export (cat ~/.fish.env|xargs -L 1)
 
 
 # load my fish functions
-for f in (find ~/.config/fish/devalv/ -type f  -name '*.fish')
+for f in (find ~/.config/fish/$USER/ -type f  -name '*.fish')
     source $f
 end
 

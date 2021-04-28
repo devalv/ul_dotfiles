@@ -3,7 +3,7 @@
 set -e
 
 echo "set python3 as default if not installed"
-[ -z "$(dpkg -s python-is-python3)" ] && apt install python-is-python3 -y
+[ -z "$(dpkg -s python-is-python3)" ] && sudo apt install python-is-python3 -y
 
 echo "installing pyenv additionals"
 sudo apt-get install -y build-essential libssl-dev zlib1g-dev libbz2-dev \
