@@ -8,7 +8,7 @@ rm -rf ~/.vim/bundle
 echo "installing vim plugin manager"
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-echo "installing vim plugins"
+echo "installing vim plugins. press enter..."
 vim +PluginInstall +qall > /dev/null
 
 exit 0
