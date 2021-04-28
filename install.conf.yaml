@@ -27,7 +27,6 @@
   - [git submodule update --init --recursive, Installing submodules]
   - [sudo ./install-linux-core.sh, Installing Fish, Terminator and essential core utils]
   - [sudo ./install-linux-stuff.sh, Installing additional linux utils]
-  - [sudo fish -c 'chsh -s (which fish)', Set fish as a default shell]
   - [curl -L https://get.oh-my.fish | fish, Installing Oh-My-Fish]
   - [fish -c omf update, Installing omf plugins]
   - command: sudo ./install-docker.sh
@@ -44,3 +43,4 @@
     stdin: true
     stdout: true
     description: Vim plugins installation
+  - [echo "Installation completed. Run fish -c 'chsh -s (which fish)' to set fish as default shell."]
