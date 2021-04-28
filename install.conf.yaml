@@ -35,13 +35,13 @@
     stdin: true
     stdout: true
     description: Installing docker and docker-compose
-  - command: ./install-vim-plugins.sh
-    stdin: true
-    stdout: true
-    description: Vim plugins installation
   - command: ./install-python-stuff.sh
     stdin: true
     stdout: true
     description: Installing Python stuff
   - [./install-chrome.sh, Installing Google Chrome]
   - [sudo ./install-snap-utils.sh, Installing graphical utils via Snap]
+  - command: ./install-vim-plugins.sh
+    stdin: true
+    stdout: true
+    description: Vim plugins installation
