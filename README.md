@@ -39,6 +39,7 @@ The default console editor is **vim**, and the default IDE is
 - curl
 - mc
 - htop
+- tmux
 - git
 - bat
 - ansible-lint
