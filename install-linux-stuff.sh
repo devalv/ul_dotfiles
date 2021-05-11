@@ -3,6 +3,7 @@
 set -e
 
 [ -z "$(dpkg -s fonts-firacode)" ] && apt-get install fonts-firacode -y
+[ -z "$(dpkg -s curl)" ] && apt install tmux -y
 [ -z "$(dpkg -s curl)" ] && apt install curl -y
 [ -z "$(dpkg -s mc)" ] && apt install mc -y
 [ -z "$(dpkg -s htop)" ] && apt install htop -y
