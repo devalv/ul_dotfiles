@@ -5,6 +5,5 @@ package getopts
 package gi
 package https://github.com/wfscheper/plugin-docker
 package pyenv
-package tmux-zen
 theme default
 theme nai
