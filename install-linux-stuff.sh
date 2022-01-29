@@ -30,5 +30,6 @@ set -e
 [ -z "$(dpkg -s openvpn)" ] && apt install openvpn -y
 [ -z "$(dpkg -s openssh-client)" ] && apt install openssh-client -y
 [ -z "$(dpkg -s default-jre)" ] && apt install default-jre -y
+[ -z "$(dpkg -s bpytop)" ] && apt install bpytop -y
 
 exit 0
