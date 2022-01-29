@@ -30,7 +30,7 @@ The default console editor is **vim**, and the default IDE is
 [PyCharm](https://www.jetbrains.com/pycharm/).
 
 ### Python
-* [pyenv](https://github.com/pyenv/pyenv) with **3.9.3** as global default
+* [pyenv](https://github.com/pyenv/pyenv) with **3.10.2** as global default
 * [pipenv](https://pipenv.pypa.io/en/latest/)
 * [pretty-errors](https://github.com/onelivesleft/PrettyErrors/)
 * [cookiecutter](https://github.com/cookiecutter/cookiecutter) 
