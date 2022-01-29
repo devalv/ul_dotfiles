@@ -38,4 +38,7 @@ python -m pretty_errors
 echo "Install сookiecutter for new global Python"
 python -m pip install -U cookiecutter
 
+echo "Install psutil for bpytop"
+python -m pip install psutil
+
 exit 0
