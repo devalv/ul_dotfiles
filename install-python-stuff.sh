@@ -16,11 +16,11 @@ rm -rf /home/$USER/.pyenv
 echo "installing pyenv"
 curl https://pyenv.run | bash
 
-echo "installing python 3.9.3 via pyenv"
-/home/$USER/.pyenv/bin/pyenv install 3.9.3 -s
+echo "installing python 3.10.2 via pyenv"
+/home/$USER/.pyenv/bin/pyenv install 3.10.2 -s
 
-echo "Set Python 3.9.3 as global interpeter"
-/home/$USER/.pyenv/bin/pyenv global 3.9.3
+echo "Set Python 3.10.2 as global interpeter"
+/home/$USER/.pyenv/bin/pyenv global 3.10.2
 
 echo "installing pipenv"
 [ -z "$(which pipenv)" ] && sudo apt install pipenv -y
