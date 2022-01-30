@@ -8,5 +8,6 @@ set -e
 [ -z "$(which insomnia)" ] && snap install insomnia
 [ -z "$(which telegram-desktop)" ] && snap install telegram-desktop
 [ -z "$(which vscode)" ] && snap install code --classic
+[ -z "$(which blender)" ] && sudo snap install blender --channel=2.93lts/stable --classic
 
 exit 0
